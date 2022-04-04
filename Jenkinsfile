@@ -10,7 +10,7 @@ if (!TT_IS_MASTER) {
     properties([disableConcurrentBuilds()])
 } else {
     echo ('two')
-    properties()
+    properties([])
 }
 
 node() {
