@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo 'hello there 1'
                 script {
-                    Random random = new Random()
-                    sleep(random.nextInt(10))
+                    sleep(100)
+                    error('testing')
                 }
                 echo 'hello there 2'
             }
