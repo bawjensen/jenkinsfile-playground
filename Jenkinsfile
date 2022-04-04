@@ -4,6 +4,8 @@ TT_IS_MASTER = env.JOB_NAME == "ios"
 // jenkins
 if (!TT_IS_MASTER) {
   properties([disableConcurrentBuilds()])
+} else {
+  properties()
 }
 
 node() {
