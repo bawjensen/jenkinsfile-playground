@@ -1,4 +1,4 @@
-TT_IS_MASTER = env.JOB_NAME == "verify-ios-pr-bryan-test/PR-2"
+TT_IS_MASTER = env.JOB_NAME == "ios"
 
 echo "env.JOB_NAME: ${env.JOB_NAME}"
 echo "TT_IS_MASTER: ${TT_IS_MASTER}"
@@ -8,9 +8,6 @@ echo "TT_IS_MASTER: ${TT_IS_MASTER}"
 if (!TT_IS_MASTER) {
     echo ('one')
     properties([disableConcurrentBuilds()])
-} else {
-    echo ('two')
-    properties([])
 }
 
 node() {
