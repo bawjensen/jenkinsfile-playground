@@ -1,4 +1,4 @@
-TT_IS_MASTER = env.JOB_NAME == "verify-ios-pr-bryan-test"
+TT_IS_MASTER = env.JOB_NAME == "verify-ios-pr-bryan-test/PR-2"
 
 echo "env.JOB_NAME: ${env.JOB_NAME}"
 echo "TT_IS_MASTER: ${TT_IS_MASTER}"
