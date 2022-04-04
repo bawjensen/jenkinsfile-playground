@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'hello there 1'
                 script {
-                    sleep(1)
+                    sleep(100)
                 }
                 echo 'hello there 2'
             }
